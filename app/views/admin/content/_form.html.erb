@@ -80,7 +80,7 @@
 
     <div class='actions'>
       <input id='save_draft' type="submit" value="<%= _('Save as draft') %>" name="article[draft]" class='btn info' />
-      <%= save( _("Publish")) %>
+      <%= save( _("Publish???")) %>
     </div>
   </div>
 
@@ -147,6 +147,14 @@
       <%= render 'admin/content/attachment', { :attachment_num => 1, :hidden => false } -%>
     </ul>
   </div>    
+
+  <div class='merge_div'>
+    <h4>Merge Articles</h4>
+    <div class='class'>
+      <%=label_tag 'Article ID'%>
+      <%= text_field_tag 'merge_with' %>
+    </div>
+  </div>
   </div>
 
 </div>
