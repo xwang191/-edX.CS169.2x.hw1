@@ -150,11 +150,13 @@
 
   <div class='merge_div'>
     <h4>Merge Articles</h4>
-    <div class='class'>
-      <%=label_tag 'Article ID'%>
-      <%= text_field_tag 'merge_with' %>
+    <div> 
+      <%= form_tag( {:action => '_merge'} ) do %>
+        <%= label_tag("_Article ID") %>
+        <%= text_field_tag(:_merge_with) %>
+        <%= submit_tag("_Merge") %>
+      <% end %>
     </div>
-  </div>
   </div>
 
 </div>

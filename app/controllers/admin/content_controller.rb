@@ -24,6 +24,9 @@ class Admin::ContentController < Admin::BaseController
   end
 
   def new
+    puts 'new'
+    puts params
+    debugger
     new_or_edit
   end
 
@@ -34,6 +37,8 @@ class Admin::ContentController < Admin::BaseController
       flash[:error] = _("Error, you are not allowed to perform this action")
       return
     end
+    puts 'in edit'
+    puts params
     new_or_edit
   end
 
