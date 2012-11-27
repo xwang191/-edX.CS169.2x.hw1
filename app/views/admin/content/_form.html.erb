@@ -148,16 +148,17 @@
     </ul>
   </div>    
 
+</div>
+
   <div class='merge_div'>
     <h4>Merge Articles</h4>
     <div> 
-      <%= form_tag( {:action => '_merge'} ) do %>
+      <%= form_tag( {:action => 'merge'} ) do %>
         <%= label_tag("_Article ID") %>
-        <%= text_field_tag(:_merge_with) %>
-        <%= submit_tag("_Merge") %>
+        <%= text_field_tag(:merge_with) %>
+        <%= submit_tag("Merge") %>
       <% end %>
     </div>
   </div>
 
-</div>
 
